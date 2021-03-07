@@ -18,11 +18,7 @@ textarea{
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
-}
-
-.description{
-  white-space: pre-wrap;
+  border-bottom: 8px solid black;
 }
 
 .time-block{
@@ -57,7 +53,7 @@ textarea{
   color: white;
 }
 
-.saveBtn {
+.save-delete {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -65,7 +61,7 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
+.save-delete i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
