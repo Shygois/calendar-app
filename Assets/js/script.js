@@ -36,7 +36,7 @@ $.each(hours, function (index, value) {
 });
 
 // Audit each time block to display past, current and future timeblocks
-var auditTime = function () {
+var hourBlock = function () {
     currentTime = moment().format("hh:mm:ss");
     // $("#currentDay").text(currentTime);
 
@@ -224,9 +224,9 @@ $("#save-delete17").on("click", "i.fa-save", function () {
 
 setInterval(function () {
     $(".event-group .events").each(function (index, el) {
-        auditTime(el);
+        hourBlock(el);
     });
 
 }, (1000 * 60)); // 1000ms x 60 = 1 minute x 30 = 30 minutes
 
-auditTime();
+hourBlock();
