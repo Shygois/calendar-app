@@ -1,10 +1,7 @@
-// Get current day using moment.js
 var currentDay = moment().format("dddd, MMMM Do");
-
-// Display current day at top of planner
 $("#currentDay").text(currentDay);
 
-// Set each timeblock in the daily schedule using moment.js
+// Set each timeblock in the daily schedule 
 var hour9  = moment().hour(9);
 var hour10 = moment().hour(10);
 var hour11 = moment().hour(11);
@@ -16,10 +13,9 @@ var hour16 = moment().hour(16);
 var hour17 = moment().hour(17);
 var hour18 = moment().hour(18);
 
-// Create an array of hour blocks for code generation
 var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
 
-// Get local storage data or set to empty
+// Local storage data
 var events9  =  JSON.parse(localStorage.getItem('hour9')) || "";
 var events10 = JSON.parse(localStorage.getItem('hour10')) || "";
 var events11 = JSON.parse(localStorage.getItem('hour11')) || "";
